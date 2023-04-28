@@ -1,14 +1,17 @@
 import React from "react";
 
 const CrudTableRow = ({ el, setDataToEdit, deleteData }) => {
-  let { name, link, id } = el;
+  let { name, cargo, telefono, email, link, id } = el;
 
   return (
     <tr>
       <td>{name}</td>
+      <td>{cargo}</td>
+      <td>{telefono}</td>
+      <td>{email}</td>
       <td>
         <a target="_blank" rel="noopener" href={link}>
-          Documentación
+          Github
         </a>
       </td>
       <td>

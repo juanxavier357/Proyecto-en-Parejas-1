@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 
 const initialForm = {
   name: "",
+  cargo: "",
+  telefono: "",
+  email: "",
   link: "",
   id: null,
 };
@@ -53,8 +56,29 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
         />
         <input
           type="text"
+          name="cargo"
+          placeholder="Cargo"
+          onChange={handleChange}
+          value={form.cargo}
+        />
+        <input
+          type="text"
+          name="telefono"
+          placeholder="Telefono"
+          onChange={handleChange}
+          value={form.telefono}
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          onChange={handleChange}
+          value={form.email}
+        />
+        <input
+          type="text"
           name="link"
-          placeholder="Link"
+          placeholder="Github"
           onChange={handleChange}
           value={form.link}
         />

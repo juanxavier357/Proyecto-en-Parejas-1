@@ -4,11 +4,14 @@ import CrudTableRow from "./CrudTableRow";
 const CrudTable = ({ data, setDataToEdit, deleteData }) => {
   return (
     <div>
-      <h3>Tabla de datos</h3>
+      <h3>Equipo</h3>
       <table>
         <thead>
           <tr>
             <th>Nombre</th>
+            <th>Cargo</th>
+            <th>Telefono</th>
+            <th>Email</th>
             <th>Link</th>
             <th>Acciones</th>
           </tr>

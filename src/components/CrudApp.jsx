@@ -6,28 +6,19 @@ import CrudTable from "./CrudTable";
 const initialDB = [
   {
     id: 1,
-    name: "HTML",
-    link: "https://developer.mozilla.org/es/docs/Web/HTML",
+    name: "Michael",
+    cargo: "Frontend Developer",
+    telefono: 3222322232,
+    email: "mgt@gmail.com",
+    link: "https://github.com/Mike2020x",
   },
   {
     id: 2,
-    name: "CSS",
-    link: "https://developer.mozilla.org/es/docs/Web/CSS",
-  },
-  {
-    id: 3,
-    name: "JavaScript",
-    link: "https://developer.mozilla.org/es/docs/Web/JavaScript",
-  },
-  {
-    id: 4,
-    name: "React",
-    link: "https://react.dev/",
-  },
-  {
-    id: 5,
-    name: "Vite",
-    link: "https://vitejs.dev/",
+    name: "Juan",
+    cargo: "Frontend Developer",
+    telefono: 516165161,
+    email: "jc@gmail.com",
+    link: "https://github.com/juanxavier357",
   },
 ];
 
