@@ -1,0 +1,29 @@
+{
+  "tecnologias": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "link": "https://developer.mozilla.org/es/docs/Web/HTML"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "link": "https://developer.mozilla.org/es/docs/Web/CSS"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript",
+      "link": "https://developer.mozilla.org/es/docs/Web/JavaScript"
+    },
+    {
+      "id": 4,
+      "name": "React",
+      "link": "https://react.dev/"
+    },
+    {
+      "id": 5,
+      "name": "Vite",
+      "link": "https://vitejs.dev/"
+    }
+  ]
+}
