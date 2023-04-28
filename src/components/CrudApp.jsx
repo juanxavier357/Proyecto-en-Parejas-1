@@ -58,7 +58,7 @@ function CrudApp() {
 
   return (
     <div>
-      <h2>CrudApp</h2>
+      <h2>Team List</h2>
       <article className="grid-1-2">
         <CrudForm
           createData={createData}
