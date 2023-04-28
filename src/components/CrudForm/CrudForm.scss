@@ -1,0 +1,22 @@
+.Content__Form {
+    
+    max-width: 80%;
+    text-align: center;
+    
+
+    &--Title {
+        h3 {
+            
+            margin: 30px;
+        }
+    }
+
+    &--Description {
+        
+        
+
+        form {
+            margin: 0;
+        }
+    }
+}
