@@ -15,7 +15,7 @@ const initialDB = [
   {
     id: 2,
     name: "Juan",
-    cargo: "Frontend Developer",
+    cargo: "Backend developer",
     telefono: 516165161,
     email: "jc@gmail.com",
     link: "https://github.com/juanxavier357",
@@ -48,7 +48,7 @@ function CrudApp() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h2>Team List</h2>
       <article className="grid-1-2">
         <CrudForm

@@ -62,14 +62,14 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
           value={form.cargo}
         />
         <input
-          type="text"
+          type="number"
           name="telefono"
           placeholder="Telefono"
           onChange={handleChange}
           value={form.telefono}
         />
         <input
-          type="text"
+          type="email"
           name="email"
           placeholder="Email"
           onChange={handleChange}
