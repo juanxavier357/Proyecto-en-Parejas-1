@@ -1,22 +1,45 @@
 .Content__Form {
-    
-    max-width: 80%;
     text-align: center;
-    
-
-    &--Title {
-        h3 {
-            
-            margin: 30px;
-        }
-    }
+    justify-content: space-around;
 
     &--Description {
-        
-        
-
         form {
             margin: 0;
+        }
+
+        input[type="text"] {
+            border: thin solid #000;
+            border-radius: 0.25rem;
+            padding: 12px;
+            margin-bottom: 1rem;
+            outline: none;
+            display: block;
+            width: 100%;
+            font-size: 1rem;
+            line-height: 1;
+            background: #ede574;
+            background: -webkit-linear-gradient(
+              to right,
+              #e1f5c4,
+              #ede574
+            );
+            background: linear-gradient(
+              to right,
+              #e1f5c4,
+              #ede574
+            );
+          }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem 0.5rem 0;
+            color: #fff;
+            background-color: #30336b;
+            border: none;
+            border-radius: 0.25rem;
+            font-weight: bold;
+            font-size: 1rem;   
         }
     }
 }

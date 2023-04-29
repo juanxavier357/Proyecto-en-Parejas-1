@@ -3,8 +3,17 @@
         text-align: center;
 
         h2 {
-            margin: 30px 0 0 0;
-            font-size: 27px;
+            margin: 20px 0 0 0;
+            font-size: 30px;
+            background-color: #536976;
+            border-radius: 0.25rem;
         }
+    }
+
+    &--Components {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
     }
 }

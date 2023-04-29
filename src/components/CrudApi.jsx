@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import CrudForm from "./CrudForm/CrudForm";
-import CrudTable from "./CrudTable";
+import CrudTable from "./CrudTable/CrudTable";
 import { helpHttp } from "../helpers/helpHttp";
 
 function CrudApi() {

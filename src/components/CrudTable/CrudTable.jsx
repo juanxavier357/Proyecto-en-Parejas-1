@@ -1,18 +1,19 @@
 import React from "react";
-import CrudTableRow from "./CrudTableRow";
+import CrudTableRow from "../CrudTableRow/CrudTableRow";
+import "./CrudTable.scss"
 
 const CrudTable = ({ data, setDataToEdit, deleteData }) => {
   return (
-    <div>
+    <div className="information__table">
       <h3>Equipo</h3>
       <table>
         <thead>
           <tr>
             <th>Nombre</th>
             <th>Cargo</th>
-            <th>Telefono</th>
-            <th>Email</th>
-            <th>Link</th>
+            <th className="information__table--telefono">Telefono</th>
+            <th className="information__table--email">Email</th>
+            <th className="information__table--link">Link</th>
             <th>Acciones</th>
           </tr>
         </thead>

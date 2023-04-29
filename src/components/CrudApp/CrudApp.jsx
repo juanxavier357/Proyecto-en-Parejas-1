@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CrudForm from "../CrudForm/CrudForm";
-import CrudTable from "../CrudTable";
+import CrudTable from "../CrudTable/CrudTable";
 import "./CrudApp.scss"
 
 const initialDB = [
@@ -52,7 +52,7 @@ function CrudApp() {
       <div className="Content__Forms--Title">
         <h2>Team List</h2>
       </div>
-      <article className="grid-1-2">
+      <article className="Content__Forms--Components">
         <CrudForm
           createData={createData}
           updateData={updateData}

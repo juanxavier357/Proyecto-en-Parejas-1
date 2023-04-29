@@ -1,4 +1,5 @@
 import React from "react";
+import "./CrudTableRow.scss"
 
 const CrudTableRow = ({ el, setDataToEdit, deleteData }) => {
   let { name, cargo, telefono, email, link, id } = el;
@@ -7,9 +8,9 @@ const CrudTableRow = ({ el, setDataToEdit, deleteData }) => {
     <tr>
       <td>{name}</td>
       <td>{cargo}</td>
-      <td>{telefono}</td>
-      <td>{email}</td>
-      <td>
+      <td className="telefono">{telefono}</td>
+      <td className="email">{email}</td>
+      <td className="link">
         <a target="_blank" rel="noopener" href={link}>
           Github
         </a>

@@ -1,0 +1,49 @@
+.information__table {
+    margin: 0 30px;
+    justify-content: space-around;
+
+    th {
+        text-align: center;
+        background: #212627;
+        color: #fff;
+    }
+
+    th,
+    td {
+        text-align: center;
+        padding: 0.5rem;
+        font-weight: bold;
+        border: thin solid #dedede;
+    }
+
+    table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 650px) {
+        &--link {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 580px) {
+        &--email {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        &--telefono {
+            display: none;
+        }
+    }
+
+}
+
+h3 {
+    text-align: center;
+    margin: 20px;
+    font-size: 27px;
+}
