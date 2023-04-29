@@ -26,7 +26,8 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
       [e.target.name]: e.target.value,
     });
   };
-  const handleSubmit = (e) => {
+
+const handleSubmit = (e) => {
     e.preventDefault();
     if (!form.name || !form.link) {
       //pequeña validacion de datos no vacios
@@ -40,10 +41,12 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
     }
     handleReset();
   };
+
   const handleReset = (e) => {
     setForm(initialForm);
     setDataToEdit(null);
   };
+
   return (
     <div className="Content__Form">
       <div className="Content__Form--Title">
@@ -87,7 +90,7 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
             value={form.link}
           />
         </form>
-        <input type="submit" value="Enviar" />
+        <input type="submit" value="Enviar" onClick={handleSubmit}/>
         <input type="reset" value="Limpiar" onClick={handleReset} />
       </div>
     </div>
