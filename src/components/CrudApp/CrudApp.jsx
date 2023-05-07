@@ -47,22 +47,6 @@ function CrudApp() {
     }
   };
 
-  // const updateData = (form) => {
-  //   let newForm = db.map((el) => (el.id === form.id ? form : el));
-  //   setDb(newForm);
-  // };
-
-  // const deleteData = (id) => {
-  //   let isDelete = confirm(
-  //     `¿Estas seguro de eliminar el registro con el id '${id}'?`
-  //   );
-  //   if (isDelete) {
-  //     let newData = db.filter((el) => el.id !== id);
-  //     setDb(newData);
-  //   } else {
-  //     return;
-  //   }
-  // };
   const updateData = async (form) => {
     const url = `https://api-proyecto-en-parejas.onrender.com/api/members/${form.id}`;
     const config = {
