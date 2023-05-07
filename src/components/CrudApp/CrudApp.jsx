@@ -24,7 +24,6 @@ import "./CrudApp.scss"
 
 function CrudApp() {
   const [db, setDb] = useState([]);
-  const [dbase, setDbase] = useState({});
   const [dataToEdit, setDataToEdit] = useState(null);
 
   const handleReadAll = async () => {
@@ -56,7 +55,6 @@ function CrudApp() {
       },
       body: JSON.stringify(form),
     }
-
     try {
       const response = await fetch(url, config)
       const data = await response.json()
@@ -66,9 +64,23 @@ function CrudApp() {
     }
   };
 
-  const updateData = (form) => {
-    let newForm = db.map((el) => (el.id === form.id ? form : el));
-    setDb(newForm);
+  const updateData = async (form) => {
+    const url = `https://api-proyecto-en-parejas.onrender.com/api/members/${form.id}`
+    const config = {
+      method: 'PATCH',
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+      body: JSON.stringify(form),
+    }
+    try {
+      const response = await fetch(url, config)
+      const data = await response.json()
+      let newForm = db.map((el) => (el.id === data.id ? data : el));
+      setDb(newForm);
+    } catch (error) {
+      console.log(error)
+    }
   };
 
   const deleteData = (id) => {

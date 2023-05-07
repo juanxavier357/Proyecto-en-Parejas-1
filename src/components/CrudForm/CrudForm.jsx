@@ -29,7 +29,6 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
 
     const handleSubmit = (e) => {
     e.preventDefault();
-    
     if (!form.name || !form.link) {
       //pequeña validacion de datos no vacios
       alert("Datos Incompletos");
