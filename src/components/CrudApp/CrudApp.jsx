@@ -8,7 +8,7 @@ function CrudApp() {
   const [dataToEdit, setDataToEdit] = useState(null);
 
   const handleReadAll = async () => {
-    const url = "https://api-proyecto-en-parejas.onrender.com/api/members";
+    const url = `${import.meta.env.VITE_BASE_URL}/api/members`;
     const config = {
       method: "GET",
     };
@@ -28,7 +28,7 @@ function CrudApp() {
   const createData = async (form) => {
     form.id = Date.now();
     //console.log(data);
-    const url = "https://api-proyecto-en-parejas.onrender.com/api/members";
+    const url = `${import.meta.env.VITE_BASE_URL}/api/members`;
     const config = {
       method: "POST",
       headers: {
@@ -46,7 +46,7 @@ function CrudApp() {
   };
 
   const updateData = async (form) => {
-    const url = `https://api-proyecto-en-parejas.onrender.com/api/members/${form.id}`;
+    const url = `${import.meta.env.VITE_BASE_URL}/api/members/${form.id}`;
     const config = {
       method: "PATCH",
       headers: {
@@ -69,7 +69,7 @@ function CrudApp() {
       `¿Estas seguro de eliminar el registro con el id '${id}'?`
     );
     if (isDelete) {
-      const url = `https://api-proyecto-en-parejas.onrender.com/api/members/${id}`;
+      const url = `${import.meta.env.VITE_BASE_URL}/api/members/${form.id}`;
       const config = {
         method: "DELETE",
       };
