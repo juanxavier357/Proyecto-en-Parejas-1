@@ -1,4 +1,3 @@
-import { useState } from "react";
 import NavBar from "./components/NavBar/NavBar";
 import CrudApp from "./components/CrudApp/CrudApp";
 import "./App.scss";

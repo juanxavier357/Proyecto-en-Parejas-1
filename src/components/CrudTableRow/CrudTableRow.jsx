@@ -2,7 +2,7 @@ import React from "react";
 import "./CrudTableRow.scss"
 
 const CrudTableRow = ({ el, setDataToEdit, deleteData }) => {
-  let { name, cargo, telefono, email, link, id } = el;
+  let { name, cargo, telefono, email, link, id} = el;
 
   return (
     <tr>
