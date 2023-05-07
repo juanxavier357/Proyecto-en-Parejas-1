@@ -1,9 +1,7 @@
 import { useState } from "react";
-
-import NavBar from "./components/NavBar/NavBar"
-import CrudApi from "./components/CrudApi";
+import NavBar from "./components/NavBar/NavBar";
 import CrudApp from "./components/CrudApp/CrudApp";
-import "./App.scss"
+import "./App.scss";
 
 function App() {
   return (
