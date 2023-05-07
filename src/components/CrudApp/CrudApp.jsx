@@ -5,7 +5,6 @@ import "./CrudApp.scss";
 
 function CrudApp() {
   const [db, setDb] = useState([]);
-  const [dbase, setDbase] = useState({});
   const [dataToEdit, setDataToEdit] = useState(null);
 
   const handleReadAll = async () => {
@@ -37,7 +36,6 @@ function CrudApp() {
       },
       body: JSON.stringify(form),
     };
-
     try {
       const response = await fetch(url, config);
       const data = await response.json();
@@ -56,13 +54,11 @@ function CrudApp() {
       },
       body: JSON.stringify(form),
     };
-
     try {
       const response = await fetch(url, config);
       const data = await response.json();
-      const updatedDb = db.map((el) => (el.id === data.id ? data : el));
-      setDb(updatedDb);
-      setDataToEdit(null);
+      let newForm = db.map((el) => (el.id === data.id ? data : el));
+      setDb(newForm);
     } catch (error) {
       console.log(error);
     }
