@@ -3,11 +3,11 @@ import CrudForm from "../CrudForm/CrudForm";
 import CrudTable from "../CrudTable/CrudTable";
 import "./CrudApp.scss"
 
-const initialDB = [
+/*const initialDB = [
   {
     id: 1,
     name: "Michael",
-    cargo: "Frontend Developer",
+    cargo: "FullStack Developer",
     telefono: 3222322232,
     email: "mgt@gmail.com",
     link: "https://github.com/Mike2020x",
@@ -15,26 +15,62 @@ const initialDB = [
   {
     id: 2,
     name: "Juan",
-    cargo: "Frontend Developer",
-    telefono: 516165161,
-    email: "jc@gmail.com",
+    cargo: "FullStack Developer",
+    telefono: 51921657652,
+    email: "cabellosalirrosas@gmail.com",
     link: "https://github.com/juanxavier357",
   },
-];
+];*/
 
 function CrudApp() {
-  const [db, setDb] = useState(initialDB);
+  const [db, setDb] = useState([]);
+  const [dbase, setDbase] = useState({});
   const [dataToEdit, setDataToEdit] = useState(null);
 
-  const createData = (data) => {
-    data.id = Date.now();
+  const handleReadAll = async () => {
+    const url = 'https://api-proyecto-en-parejas.onrender.com/api/members'
+    const config = {
+      method: 'GET',
+    }
+    try {
+      const response = await fetch(url, config)
+      const data = await response.json()
+      setDb(data) // asigna el valor al estado y genera un nuevo renderizado (pintado)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  useEffect(() => {
+    handleReadAll()
+  }, [])
+
+  const createData = async (form) => {
+    form.id = Date.now();
     //console.log(data);
-    setDb([...db, data]);
+    const url = 'https://api-proyecto-en-parejas.onrender.com/api/members'
+    const config = {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+      body: JSON.stringify(form),
+    }
+
+    try {
+      const response = await fetch(url, config)
+      const data = await response.json()
+      setDb([...db, data]);
+    } catch (error) {
+      console.log(error)
+    }
   };
-  const updateData = (data) => {
-    let newData = db.map((el) => (el.id === data.id ? data : el));
-    setDb(newData);
+
+  const updateData = (form) => {
+    let newForm = db.map((el) => (el.id === form.id ? form : el));
+    setDb(newForm);
   };
+
   const deleteData = (id) => {
     let isDelete = confirm(
       `¿Estas seguro de eliminar el registro con el id '${id}'?`
@@ -45,7 +81,7 @@ function CrudApp() {
     } else {
       return;
     }
-  };
+  }
 
   return (
     <div className="Content__Forms">
