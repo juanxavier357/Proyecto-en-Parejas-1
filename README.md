@@ -48,26 +48,32 @@ This is a solution to the My Work Team Page project of the Make It Real course.
 
 ### Screenshot
 
-#### Proyecto My Work Team
+### Proyecto My Work Team
 
 ![Proyecto My Work Team](https://github.com/juanxavier357/Proyecto-en-Parejas-1/blob/main/images/My%20Work%20Team.PNG)
 
-#### Forma de Uso
+### Forma de Uso
 
 #### 1. Agregando usuario
+
 ![Agregando usuario](https://github.com/juanxavier357/Proyecto-en-Parejas-1/blob/main/images/Agregando%20usuario.PNG)
 
 #### 2. Enviando usuario
+
 ![Enviando Usuario](https://github.com/juanxavier357/Proyecto-en-Parejas-1/blob/main/images/Enviando%20usuario.PNG)
 
 #### 3. Editando usuario
+
 ![Editando usuario](https://github.com/juanxavier357/Proyecto-en-Parejas-1/blob/main/images/Editando%20el%20usuario.PNG)
 
 #### 4. Actualizando usuario
+
 ![Actualizando usuario](https://github.com/juanxavier357/Proyecto-en-Parejas-1/blob/main/images/Actualizando%20el%20usuario.PNG)
 
 #### 5. Eliminando usuario
+
 ![Eliminando usuario](https://github.com/juanxavier357/Proyecto-en-Parejas-1/blob/main/images/Eliminando%20el%20usuario.PNG)
+
 
 ## My process
 
