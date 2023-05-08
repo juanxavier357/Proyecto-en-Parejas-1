@@ -20,21 +20,47 @@ This is a solution to the My Work Team Page project of the Make It Real course.
 
 ### The challenge
 
-Users should be able to:
+  En este proyecto en parejas para el bootcamp Fullstack Top de Make It Real, se desarrollará una aplicación web que permita realizar las operaciones básicas del CRUD (Crear, Leer, Actualizar y Eliminar) usando React y Express. La aplicación almacenará los datos en memoria en el lado del backend y tendrá una API REST para las operaciones CRUD.
 
-- Task 1
-- Task 2
+  La aplicación tendrá una interfaz de usuario sencilla e intuitiva que permita a los usuarios interactuar con la aplicación y realizar las operaciones CRUD sin dificultad. Además, se implementarán validaciones para asegurarse de que los datos ingresados sean correctos y se mostrarán mensajes de error claros en caso de que se produzcan errores.
+
+  Se utilizará React para construir la interfaz de usuario y Express para crear la API REST en el backend. Los datos se almacenarán en memoria en el lado del backend y se utilizarán las operaciones CRUD para interactuar con ellos.
+
+  El proyecto se dividirá en varias etapas, comenzando por la planificación y diseño de la aplicación, seguido de la implementación de la interfaz de usuario y la API REST, y finalmente la implementación de las operaciones CRUD y el despliegue en producción.
+  
+  Objetivos:
+  - Desarrollar una aplicación web que permita realizar las operaciones CRUD usando React y Express.
+  - Almacenar los datos en memoria en el lado del backend y crear una API REST para las operaciones CRUD.
+  - Implementar una interfaz de usuario sencilla e intuitiva que permita a los usuarios interactuar con la aplicación.
+  - Implementar validaciones para asegurarse de que los datos ingresados sean correctos y mostrar mensajes de error claros en caso de que se produzcan errores.
+  - Dividir el proyecto en etapas.
+  - Desplegar la aplicación de React y Express por separado en plataformas como Vercel y Railway.
+
+- Task 1:
+  Reunión de compañeros para ponernos de acuerdo con las responsabilidades de construir el Frontend y el Backend.
+  Diseñar un esquema de la vista de la página web con los componentes que se deben crear. 
+  Dividir el proyecto en partes para iniciar los primeros avances.
+  
+- Task 2:
+  Creación de los repositorios y empezar a programar las partes que nos tocó. 
+  Reunirnos en las tardes para ir viendo cómo va quedando el proyecto y en qué nos podemos ayudar.
+  Verificar que esté yendo bien nuestros avances y revisar información del tema, repasando las clases.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Proyecto My Work Team](https://github.com/juanxavier357/Proyecto-en-Parejas-1/blob/main/images/My%20Work%20Team.PNG)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+#### Forma de Uso
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+![Agregando usuario](https://github.com/juanxavier357/Proyecto-en-Parejas-1/blob/main/images/Agregando%20usuario.PNG)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![Enviando Usuario](https://github.com/juanxavier357/Proyecto-en-Parejas-1/blob/main/images/Enviando%20usuario.PNG)
 
+![Editando usuario](https://github.com/juanxavier357/Proyecto-en-Parejas-1/blob/main/images/Editando%20el%20usuario.PNG)
+
+![Actualizando usuario](https://github.com/juanxavier357/Proyecto-en-Parejas-1/blob/main/images/Actualizando%20el%20usuario.PNG)
+
+![Eliminando usuario](https://github.com/juanxavier357/Proyecto-en-Parejas-1/blob/main/images/Eliminando%20el%20usuario.PNG)
 
 ## My process
 
