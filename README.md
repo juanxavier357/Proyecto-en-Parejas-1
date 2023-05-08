@@ -80,9 +80,14 @@ This is a solution to the My Work Team Page project of the Make It Real course.
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SASS custom properties
 - Flexbox
 - Mobile-first workflow
+- Node
+- React
+- Vite
+- API HTTPS
+- Fetch
 
 ### What I learned
 
@@ -112,15 +117,17 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Proyecto Web](https://my-work-team.vercel.app/) - Página web de la vista del cliente
+- [Proyecto API](https://api-proyecto-en-parejas.onrender.com/api/members) - Página web de la base de datos del servidor
 
-## Author
+## Authors
 
-- Website - [Add your name here](https://www.your-site.com)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Juan Xavier](https://github.com/juanxavier357)
+- Website - [Michael](https://github.com/Mike2020x)
 
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Gracias al buen trabajo en equipo, a la gran disposición y ayuda de mi compañero Michael se pudo lograr hacer un buen proyecto.
+Agradezco a mis mentores Cristian y Juan de Make It Real, por su ayuda y enseñanzas se ha podido desarrollar este proyecto que
+fue un verdadero desafío que nos ha enseñado a mí y mi compañero poder desplegar nuestra primera aplicación web.
