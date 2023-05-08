@@ -69,7 +69,7 @@ function CrudApp() {
       `¿Estas seguro de eliminar el registro con el id '${id}'?`
     );
     if (isDelete) {
-      const url = `${import.meta.env.VITE_BASE_URL}/api/members/${form.id}`;
+      const url = `${import.meta.env.VITE_BASE_URL}/api/members/${id}`;
       const config = {
         method: "DELETE",
       };
